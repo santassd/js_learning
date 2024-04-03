@@ -1,0 +1,17 @@
+const vowels = ["a","e","i","o","u","A","E","I","O","U"];
+
+function countVowels(sentence){
+    let count = 0;
+    const letters = Array.from(sentence);
+
+    letters.forEach(function(value){
+        const letter = value.toLowerCase(); // Convert letter to lowercase
+        if (vowels.includes(letter)){
+            count++;
+        } 
+    });
+
+    return count;
+}
+
+console.log(countVowels("I Love Bangladesh"));
