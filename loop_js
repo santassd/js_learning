@@ -1,0 +1,15 @@
+const fruits = new Map();
+
+fruits.set("apple", 200);
+fruits.set("mango", 350);
+fruits.set("banana", 260);
+
+let text = "";
+for(const x of fruits.entries()){
+  text+=x;
+  console.log(x);
+}
+
+
+
+
